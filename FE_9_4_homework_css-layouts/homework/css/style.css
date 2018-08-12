@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ h1, h2, h3, h4 , h5 , h6, p, a, button, span, li {
+     font-family: Open Sans;
+}
+ body {
+     width: 1600px;
+     padding-left: 8%;
+     padding-right: 8%;
+}
+ .main {
+     background-image: url(../img/apples.jpg);
+     height: 900px;
+     background-repeat: no-repeat;
+     background-size: 100% 900px;
+     box-sizing: border-box;
+}
+ .navigation {
+     overflow: hidden;
+}
+ .comlogo {
+     margin-top: 50px;
+     margin-left: 65px;
+     color: #FFF;
+     text-transform: uppercase;
+     letter-spacing: 0.2em;
+}
+ nav {
+     float: right;
+     margin-top: -40px;
+}
+ nav a {
+     text-decoration: none;
+     color: #FFF;
+     margin-right: 70px;
+}
+ .header {
+     display: flex;
+     box-sizing: border-box;
+     flex-direction: column;
+     margin-top: 10em;
+}
+ .header h1, .header h3 {
+     max-width: 100%;
+     height: auto;
+     margin: 0 auto;
+     color: #FFF;
+}
+ h1 {
+     font-size: 50px;
+     letter-spacing: 0.2em;
+     text-transform: uppercase;
+}
+ h1 span {
+     font-size: 90px;
+}
+ .headbtn {
+     width: 300px;
+     height: 70px;
+     margin: 230px 40.5em;
+     border: 3px solid #FFF;
+     color: #FFF;
+     font-size: 1em;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+ button:active {
+     outline: none;
+}
+ button:focus {
+     outline: none;
+}
+ .lorem {
+     min-height: 440px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 65px;
+}
+ .lorem p:first-child {
+     font-size: 25px;
+     max-width: 580px;
+}
+ .lorem p {
+     max-width: 700px;
+}
+ .featArticles {
+     background-color: #f3f3f3;
+     display: flex;
+     flex-direction: column;
+     padding-top: 195px;
+}
+ .featArticles h2 {
+     font-weight: 300;
+     margin: 0 auto;
+     padding-bottom: 120px;
+}
+ article {
+     margin-top: 2em;
+     display: flex;
+     padding: 0 4%;
+     flex-direction: row;
+     justify-content: space-between;
+}
+ .like {
+     border: 2px solid #FFF;
+     padding: 10px;
+     height: 20px;
+     position: absolute;
+     top: 30px;
+     right: 20px;
+     background-color: #343638;
+     opacity: 0.5;
+}
+ .like a {
+     text-decoration: none;
+     margin: auto;
+     color: #FFF;
+}
+ .imageBox p {
+     min-width: 500px;
+     position: absolute;
+     left: 15px;
+     bottom: 2px;
+     color: #FFF;
+}
+ .pBox {
+     min-width: 500px;
+     display: flex;
+     align-items: center;
+}
+ .pBox p {
+     text-align: center;
+     font-size: 15px;
+     color: #9E9E9E;
+     font-weight: 600;
+     padding: 0 18px;
+}
+ article:nth-child(odd) {
+     flex-direction: row-reverse;
+}
+ article:nth-child(odd) .imageBox {
+     background-image: url(../img/sample3.jpg);
+}
+ article:nth-child(even) .imageBox {
+     background-image: url(../img/sample.jpg);
+}
+ .imageBox {
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-width: 950px;
+     height: 370px;
+     position: relative;
+}
+ .mail {
+     width: 1410px;
+     margin: 0 auto;
+     background-color: #fff;
+     margin-top: 65px;
+     margin-bottom: 65px;
+     padding: 70px 32px;
+     display: flex;
+     justify-content: space-between;
+}
+ .mailLeft span{
+     font-size: 25px;
+     line-height: 70px;
+}
+ .inText {
+     border: 2px solid #000;
+     padding: 25.5px;
+     min-width: 895px;
+     font-size: 15px;
+     margin-right: -4px;
+     background-color: #f3f3f3;
+}
+ .inSub {
+     padding: 30px;
+     color: #B7C8D9;
+     background-color: #343638;
+     outline: none;
+     border: 2px solid #343638;
+     height: 72px;
+     line-height: 9px;
+     font-size: 18px;
+}
+ .inText::placeholder {
+    /* Chrome */
+     color: #000;
+     font-size: 18px;
+}
+ .inSub:active {
+     outline: none;
+}
+ .mailRight {
+     display: flex;
+     align-items: center;
+}
+ .footer {
+     padding: 150px 65px;
+     background-color: #fff;
+}
+ .fColumn {
+     max-width: 345px;
+}
+ .footerUp {
+     display: flex;
+     justify-content: space-between;
+}
+ .fColumn h3 {
+     font-size: 18px;
+     font-weight: bold;
+}
+ .fColumn p {
+     color:#A4A4A4;
+     font-weight: 300;
+}
+ .fColumn span {
+     color: #343638;
+     opacity: 0.3;
+}
+ .fColumn form {
+     width: 100%;
+     display: flex;
+     height: 48px;
+     border: 1px solid #000;
+}
+ .fColumn input {
+     width: 70%;
+     background-color: #f3f3f3;
+     border: none;
+     padding: 17px;
+}
+ .fColumn input::placeholder {
+     color: #000;
+     font-size: 15px;
+     font-weight: 500;
+}
+ .fColumn button {
+     width: 30%;
+     background-color: #343638;
+     border: none;
+     color: #B7C8D9;
+     font-size: 15px;
+}
+ .footerDown {
+     border-top: 1px solid #9E9E9E;
+    /*padding: 0 65px;
+    */
+     display: flex;
+     justify-content: space-between;
+}
+ .footerDown span {
+     font-size: 20px;
+     color: #9E9E9E;
+     line-height: 50px;
+}
+ .footerDown ul {
+     list-style: none;
+}
+ .footerDown ul li {
+     display: inline;
+     margin-right: 35px;
+     font-size: 20px;
+     color: #000;
+}
