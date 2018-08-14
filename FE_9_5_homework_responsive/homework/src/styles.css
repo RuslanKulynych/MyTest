@@ -1,0 +1,198 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+/* Your styles go here */
+
+body {
+  background-color: #0a1223;
+  padding: 20px 5%;
+  font-family: sans-serif;
+}
+
+button {
+  z-index: -1;
+}
+
+/*#myBtn {
+  display: none;
+}*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: #5d5d5d;
+  margin-right: 25px;
+}
+
+a:hover {
+  color: #54597d;
+}
+
+nav a:first-child {
+  color: #54597d;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 5.5em;
+  padding-top: 15%;
+  text-align: center;
+}
+
+h1 span {
+  font-style: italic; 
+}
+
+h2 {
+  font-size: 2.1em;
+  color: #FFF;
+  top: 0;
+  z-index: 2;
+  /*-webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255,255,255,1)), to(rgba(63,63,63,0)));*/
+}
+
+p {
+  font-size: 1.25em;
+  color: #5d5d5d;
+}
+
+.mainContentWrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+img {
+  /*width: 50%;
+  height: 50%;*/
+  height: 350px;
+}
+
+.mainContentWrapper article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.ftext {
+  width: 45%;
+  align-items: center;
+  text-align: justify;
+}
+
+article .ftext:nth-child(odd) {
+  padding-left: 4%;
+}
+
+article .ftext:nth-child(even) {
+  padding-right: 4%;
+}
+
+@media(max-width: 991px) {
+  
+/*#myBtn {
+  display: none;
+}*/
+
+  body {
+    padding: 0 3%;
+  }
+
+  h1 {
+    font-size: 3.2em;
+  }
+
+  .mainContentWrapper {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .mainContentWrapper article:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .ftext {
+    width: 70%;
+  }
+} 
+
+
+@media(max-width: 575px) {
+
+  body {
+    background-color: #fff;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h1, h2, p {
+    color: #000;
+
+  }
+
+  h2 {
+  color: #000;
+  top: 0;
+  z-index: 2;
+  }
+
+  .ftext {
+    width: 100%
+  }
+
+  #myBtn {
+    color: #fff;
+    position: fixed;
+    bottom: 70px;
+    float: right;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: #5ebcff;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 4px 4px 4px #5d5d5d;
+    z-index: 1;
+
+    
+   /* margin-left: 5px;*/
+    border-bottom: transparent;
+    background-color: #7dbbf1;
+    }
+  
+
+}
