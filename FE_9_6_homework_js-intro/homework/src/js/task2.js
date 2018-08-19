@@ -27,12 +27,15 @@ if (perimeter === parseInt(perimeter)) {
 
 if (S === S.toFixed(2)) {
 	S = S.toFixed();
-	
+
 } else {
 	S = S.toFixed(2);
-	
 }
 
+if (S <= 0.00) {
+	alert('Invalid data');
+	throw 'stop';
+}
 
 
 console.log('Side C = ', sideC,'; Square = ', S,'; Perimeter = ', perimeter);
